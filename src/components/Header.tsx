@@ -20,10 +20,16 @@ const Header: React.FC = () => {
             Chris Aslan
           </Typography>
         </Link>
-        <Box sx={{ flexGrow: 1 }} /> {/* This box will push the buttons to the right */}
-        <Button color="inherit" href="/books">Books</Button>
-        <Button color="inherit" href="/lectures">Lectures</Button>
-        <Button color="inherit" href="/tours">Tours</Button>
+        <Box sx={{ flexGrow: 1 }} />
+        <Link to="/books" style={{ color: 'inherit', textDecoration: 'none' }}>
+          <Button color="inherit">Books</Button>
+        </Link>
+        <Link to="/lectures" style={{ color: 'inherit', textDecoration: 'none' }}>
+          <Button color="inherit">Lectures</Button>
+        </Link>
+        <Link to="/tours" style={{ color: 'inherit', textDecoration: 'none' }}>
+          <Button color="inherit">Tours</Button>
+        </Link>
       </Toolbar>
     </AppBar>
   );
