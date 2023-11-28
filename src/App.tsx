@@ -12,8 +12,10 @@ import {
 } from 'react-router-dom';
 
 const App: React.FC = () => {
+  const basename = process.env.PUBLIC_URL || ''; // This will set the basename to your repository name
+
   return (
-    <Router>
+    <Router basename={basename}>
       <Header />
       <main>
         <Routes>

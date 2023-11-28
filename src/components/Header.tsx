@@ -21,9 +21,9 @@ const Header: React.FC = () => {
           </Typography>
         </Link>
         <Box sx={{ flexGrow: 1 }} /> {/* This box will push the buttons to the right */}
-        <Button color="inherit" href="/books">Books</Button>
-        <Button color="inherit" href="/lectures">Lectures</Button>
-        <Button color="inherit" href="/tours">Tours</Button>
+        <Button color="inherit" href="./books">Books</Button>
+        <Button color="inherit" href="./lectures">Lectures</Button>
+        <Button color="inherit" href="./tours">Tours</Button>
       </Toolbar>
     </AppBar>
   );
