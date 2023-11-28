@@ -53,7 +53,7 @@ import image41 from '../assets/images/book-covers/A Carpet Ride to Khiva/Carpet 
 import image42 from '../assets/images/book-covers/A Carpet Ride to Khiva/Carpet Ride to Khiva gallery/uzbekistan 062.jpg';
 import image43 from '../assets/images/book-covers/A Carpet Ride to Khiva/Carpet Ride to Khiva gallery/Washing Shah Rukh.jpg';
 import image44 from '../assets/images/book-covers/A Carpet Ride to Khiva/Carpet Ride to Khiva gallery/Weaving close up.jpg';
-import video1 from '../assets/videos/Unravelling_the_Silk_Road_video_LQ.mp4';
+// import video1 from '../assets/videos/Unravelling_the_Silk_Road_video_LQ.mp4';
 import the_wool_road_image_1 from '../assets/images/book-covers/Unravelling the Silk Road/The Wool Road/1.jpg';
 import the_wool_road_image_2 from '../assets/images/book-covers/Unravelling the Silk Road/The Wool Road/2.jpg';
 import the_wool_road_image_3 from '../assets/images/book-covers/Unravelling the Silk Road/The Wool Road/3.jpg';
@@ -163,7 +163,7 @@ const Books: React.FC = () => {
   const [selectedBook, setSelectedBook] = useState<Book | null>(null);
 
   const booksData: Book[] = [
-    { id: 'Unravelling the Silk Road', title: 'Unravelling the Silk Road', image: Unravelling_the_Silk_Road, type: BookType.VideoGallery, videoUrl: video1,
+    { id: 'Unravelling the Silk Road', title: 'Unravelling the Silk Road', image: Unravelling_the_Silk_Road, type: BookType.VideoGallery, videoUrl: 'https://www.youtube.com/watch?v=yci475Vwc10',
     galleries: [
       {
         heading: 'The Wool Road',
