@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Grid, Typography, Dialog } from '@mui/material';
+import { Container, Grid, Typography, Dialog, Paper } from '@mui/material';
 import BookCard from '../components/BookCard';
 import Gallery from '../components/Gallery';
 import Interview from '../components/Interview';
@@ -335,26 +335,28 @@ const Books: React.FC = () => {
 
   return (
     <Container>
-      <Typography variant="h1">Books</Typography>
-      <Grid container spacing={2}>
-        {booksData.map((book, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index} onClick={() => handleOpen(book)}>
-            <BookCard {...book} />
-          </Grid>
-        ))}
-      </Grid>
-        {selectedBook && (
-          <Dialog open={open} onClose={handleClose} fullWidth maxWidth="lg">
-            <Typography variant="h2">{selectedBook.title}</Typography>
-            {selectedBook.type === BookType.Gallery ? (
-              <Gallery images={selectedBook.gallery} />
-            ) : selectedBook.type === BookType.Interview ? (
-              <Interview title={selectedBook.title} interviewQuestion={selectedBook.interviewQuestion} interviewAnswer={selectedBook.interviewAnswer} />
-            ) : (
-              <VideoGallery videoUrl={selectedBook.videoUrl} galleries={selectedBook.galleries} />
-            )}
-          </Dialog>
-        )}
+      <Paper elevation={3} style={{ padding: '20px', margin: '20px 0' }}>
+        <Typography variant="h1">Books</Typography>
+        <Grid container spacing={2}>
+          {booksData.map((book, index) => (
+            <Grid item xs={12} sm={6} md={4} key={index} onClick={() => handleOpen(book)}>
+              <BookCard {...book} />
+            </Grid>
+          ))}
+        </Grid>
+          {selectedBook && (
+            <Dialog open={open} onClose={handleClose} fullWidth maxWidth="lg">
+              <Typography variant="h2">{selectedBook.title}</Typography>
+              {selectedBook.type === BookType.Gallery ? (
+                <Gallery images={selectedBook.gallery} />
+              ) : selectedBook.type === BookType.Interview ? (
+                <Interview title={selectedBook.title} interviewQuestion={selectedBook.interviewQuestion} interviewAnswer={selectedBook.interviewAnswer} />
+              ) : (
+                <VideoGallery videoUrl={selectedBook.videoUrl} galleries={selectedBook.galleries} />
+              )}
+            </Dialog>
+          )}
+      </Paper>
     </Container>
   );
 }
