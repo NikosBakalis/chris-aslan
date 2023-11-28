@@ -3,7 +3,7 @@ import Gallery from './Gallery'; // Make sure the path is correct
 import { Box, Typography } from '@mui/material';
 
 interface VideoGalleryProps {
-  videoUrl: string;
+  videoUrl: string; // This prop seems unused in your current setup
   galleries: {
     heading: string;
     images?: string[];
@@ -13,9 +13,21 @@ interface VideoGalleryProps {
 const VideoGallery: React.FC<VideoGalleryProps> = ({ videoUrl, galleries }) => {
   return (
     <Box className="video-gallery" sx={{ width: '100%', marginBottom: 4, overflowX: 'hidden' }}>
-      <Box component="video" controls sx={{ width: '100%' }}>
-        <source src={videoUrl} type="video/mp4" />
-        Your browser does not support the video tag.
+      <Box sx={{ width: '100%', overflow: 'hidden', position: 'relative', paddingTop: '56.25%' }}>
+        <iframe 
+          src={videoUrl}
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+          }}
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          title="Embedded youtube"
+        />
       </Box>
       {galleries.map((gallery, index) => (
         <Box key={index} className="gallery-section" sx={{ marginTop: 4 }}>
