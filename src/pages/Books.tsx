@@ -347,7 +347,7 @@ const Books: React.FC = () => {
             <Dialog open={open} onClose={handleClose} fullWidth maxWidth="lg">
               <Typography variant="h2">{selectedBook.title}</Typography>
               {selectedBook.type === BookType.Gallery ? (
-                <Gallery images={selectedBook.gallery} />
+                <Gallery images={selectedBook.gallery} link='http://www.acarpetridetokhiva.com' />
               ) : selectedBook.type === BookType.Interview ? (
                 <Interview title={selectedBook.title} interviewQuestion={selectedBook.interviewQuestion} interviewAnswer={selectedBook.interviewAnswer} />
               ) : (
