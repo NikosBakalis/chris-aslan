@@ -49,7 +49,7 @@ const Lectures: React.FC = () => {
                 <CardMedia
                   component="img"
                   alt={lecture.title}
-                  height="140"
+                  height="400vh"
                   image={lecture.image}
                 />
                 <CardContent>
