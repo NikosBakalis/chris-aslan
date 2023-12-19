@@ -17,7 +17,7 @@ const BookCard: React.FC<BookCardProps> = ({ image, title }) => {
           height="140"
           image={image}
           title={title}
-          sx={{ height: '50vh' }}
+          sx={{ height: '550px' }}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
