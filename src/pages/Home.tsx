@@ -1,14 +1,36 @@
 import React from 'react';
 import { Container, Typography, Paper, Avatar } from '@mui/material';
-import ChrisImage from '../assets/images/chris.jpg';  // Assuming you have an image of Chris named chris.jpg
+import ChrisImage from '../assets/images/chris.jpg';
 
 const Home: React.FC = () => {
   return (
     <Container>
-      <Paper elevation={3} style={{ padding: '20px', margin: '20px 0' }}>
+      <Paper elevation={3} sx={{ padding: '20px', margin: '20px 0' }}>
         <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
-          <Avatar variant="rounded" src={ChrisImage} alt="Chris Aslan" style={{ width: '150px', height: '210px', marginRight: '20px' }} />
-          <Typography variant="h1">A Bit About Chris</Typography>
+          <Avatar 
+            variant="rounded" 
+            src={ChrisImage} 
+            alt="Chris Aslan" 
+            sx={{
+              width: '150px', 
+              height: '210px', 
+              marginRight: '20px',
+              '@media (max-width: 600px)': {
+                width: '100px', 
+                height: '140px'
+              }
+            }} 
+          />
+          <Typography 
+            variant="h1"
+            sx={{
+              '@media (max-width: 600px)': {
+                fontSize: '1.5rem'
+              }
+            }}
+          >
+            A Bit About Chris
+          </Typography>
         </div>
         <Typography variant="body1" paragraph>
           Chris Aslan was born in Turkey and spent his childhood there and in war-torn Beirut. After school, Chris spent two years at sea before studying Media and journalism at Leicester University.
