@@ -40,7 +40,7 @@ const Lectures: React.FC = () => {
       <Paper elevation={3} style={{ padding: '20px', margin: '20px 0' }}>
         <Typography variant="h1" gutterBottom>Lectures</Typography>
         <Typography variant="body1" paragraph>
-          Chris lectures both online and in-person. Most of his lectures are done through the Art Society...
+          Chris lectures both online and in-person. Most of his lectures are done through the Art society...
         </Typography>
         <Grid container spacing={4}>
           {lecturesData.map((lecture, index) => (

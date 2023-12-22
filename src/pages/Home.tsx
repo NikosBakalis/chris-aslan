@@ -33,7 +33,7 @@ const Home: React.FC = () => {
           </Typography>
         </div>
         <Typography variant="body1" paragraph>
-          Chris Aslan was born in Turkey and spent his childhood there and in war-torn Beirut. After school, Chris spent two years at sea before studying Media and journalism at Leicester University.
+          Chris Aslan was born in Turkey and spent his childhood there and in war-torn Beirut. After school, Chris spent two years at sea before studying media and journalism at Leicester University.
         </Typography>
         <Typography variant="body1" paragraph>
           He then moved to Khiva, a desert oasis in Uzbekistan, establishing a UNESCO workshop reviving fifteenth century carpet designs and embroideries, and becoming the largest non-government employer in town. He was kicked out as part of an anti-Western purge, and took a year in Cambridge to write A Carpet Ride to Khiva.
