@@ -1,9 +1,10 @@
 import React from 'react';
-import Gallery from './Gallery'; // Make sure the path is correct
+import Gallery from './Gallery';
 import { Box, Typography } from '@mui/material';
+import ReactPlayer from 'react-player';
 
 interface VideoGalleryProps {
-  videoUrl: string; // This prop seems unused in your current setup
+  videoUrl: string;
   galleries: {
     heading: string;
     images?: string[];
@@ -12,29 +13,32 @@ interface VideoGalleryProps {
 
 const VideoGallery: React.FC<VideoGalleryProps> = ({ videoUrl, galleries }) => {
   return (
-    <Box className="video-gallery" sx={{ width: '100%', marginBottom: 4, overflowX: 'hidden' }}>
-      <Box sx={{ width: '100%', overflow: 'hidden', position: 'relative', paddingTop: '56.25%' }}>
-        <iframe 
-          src={videoUrl}
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
+    <Box className="video-gallery" sx={{ marginBottom: 4, overflowX: 'hidden' }}>
+      <Box sx={{ display: 'flex', justifyContent: 'center', paddingTop: 4 }}>
+        <Box
+          sx={{
             width: '100%',
-            height: '100%',
+            maxWidth: '900px',
+            height: '500px',
+            position: 'relative',
           }}
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          title="Embedded youtube"
-        />
+        >
+          <ReactPlayer
+            url={videoUrl}
+            controls
+            width="100%"
+            height="100%"
+            style={{ position: 'absolute', top: 0, left: 0 }}
+            playing={false}
+          />
+        </Box>
       </Box>
       {galleries.map((gallery, index) => (
-        <Box key={index} className="gallery-section" sx={{ marginTop: 4 }}>
-          <Typography variant="h5" gutterBottom>
+        <Box key={index} className="gallery-section" sx={{ marginTop: 4, marginLeft: 2 }}>
+          <Typography variant="h4" gutterBottom sx={{textDecoration: 'underline'}}>
             {gallery.heading}
           </Typography>
-          <Gallery images={gallery.images} />
+          <Gallery images={gallery.images || []} />
         </Box>
       ))}
     </Box>

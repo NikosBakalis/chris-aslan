@@ -1,9 +1,18 @@
 .gallery-item img {
-    /* max-width: 100vw; */
-    max-height: 40vh;
-    /* object-fit: contain; */
-    /* width: auto; */
-    height: auto;
-    margin: auto;
-  }
-  
+  max-height: 40vh;
+  width: 100%;
+  object-fit: contain;
+  margin: auto;
+}
+
+.custom-dots {
+  margin-top: 20px;
+}
+
+.gallery-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  overflow: hidden;
+}

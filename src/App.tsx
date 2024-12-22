@@ -10,23 +10,35 @@ import {
   Route,
   Routes
 } from 'react-router-dom';
+import {
+  createTheme,
+  ThemeProvider,
+} from '@mui/material/styles';
 
 const App: React.FC = () => {
   const basename = process.env.PUBLIC_URL || ''; // This will set the basename to your repository name
 
+  let theme = createTheme({
+    typography: {
+      fontFamily: 'Raleway, Arial',
+    },
+  });
+
   return (
-    <Router basename={basename}>
-      <Header />
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/books" element={<Books />} />
-          <Route path="/lectures" element={<Lectures />} />
-          <Route path="/tours" element={<Tours />} />
-        </Routes>
-      </main>
-      <Footer />
-    </Router>
+    <ThemeProvider theme={theme}>
+      <Router basename={basename}>
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/books" element={<Books />} />
+            <Route path="/lectures" element={<Lectures />} />
+            <Route path="/tours" element={<Tours />} />
+          </Routes>
+        </main>
+        <Footer />
+      </Router>
+    </ThemeProvider>
   );
 }
 
