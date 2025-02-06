@@ -66,13 +66,22 @@ const Tours: React.FC = () => {
       <Paper elevation={3} style={{ padding: '20px', margin: '20px 0' }}>
         <Typography variant="h1" gutterBottom>Tours</Typography>
         <Typography variant="body1" paragraph>
-          Why not join Chris Aslan on a Silk Road adventure? Chris leads two-week tours to Uzbekistan and also multi-country tours of Central Asia or the Caucasus, and has decades of experience within the region. Whether booking Chris for a private tour, or joining one of his small group tours, travelling with him is never just a matter of sight-seeing. Expect an immersive experience; eating in local homes/yurts, picking cotton, feeding silkworms, haggling in bazaars, and visiting hammams or banyas for a good steam and a soak. Chris also includes informal talks as part of every tour to help you scratch beneath the surface and discover more about the places you’re visiting. Accommodation is either luxury or boutique and small groups are a maximum of 15 people.
+        Why not join Chris Aslan on a Silk Road adventure? Chris leads two-week tours to Uzbekistan and also multi-country tours of Central Asia or the Caucasus, and has decades of experience within the region. Whether booking Chris for a private tour, or joining one of his small group tours, travelling with him is never just a matter of sight-seeing. Expect an immersive experience; eating in local homes/yurts, picking cotton, feeding silkworms, haggling in bazaars, and visiting hammams or banyas for a good steam and a soak. Chris also includes informal talks as part of every tour to help you scratch beneath the surface and discover more about the places you’re visiting. Accommodation is either luxury or boutique and small groups are a maximum of 15 people.
         </Typography>
         <Typography variant="body1" paragraph>
-          For more information about Chris’s group tours visit: <a href="https://www.indusexperiences.co.uk" target="_blank" rel="noopener noreferrer">www.indusexperiences.co.uk</a>
+        All tours for 2025 are full booked, except a few places on Lands of Fire and Wine. This tour begins in Baku, Azerbaijan and works through Azerbaijan and a large chunk of Georgia, taking in breath-taking scenery and churches, wine-tasting and hot-springs, before finishing in North East Turkey in the tea plantations and the jaw-dropping Sumela Monastery. More details here: <a href="https://www.indusexperiences.co.uk/tours/land-of-fire-and-wine-2025/">https://www.indusexperiences.co.uk/tours/land-of-fire-and-wine-2025/</a>
         </Typography>
         <Typography variant="body1" paragraph>
-          Or email/call: <a href="mailto:holidays@indusexperiences.co.uk">holidays@indusexperiences.co.uk</a> Tel: +44 208 901 7320
+        For tours of Uzbekistan and Tajikistan in 2026, (spring and autumn) contact:
+        </Typography>
+        <Typography variant="body1" paragraph>
+        <a href="https://www.aceculturaltours.co.uk/">https://www.aceculturaltours.co.uk/</a> and <a href="https://www.indusexperiences.co.uk/">https://www.indusexperiences.co.uk/</a> and ask for information about tours with Chris Aslan
+        </Typography>
+        <Typography variant="body1" paragraph>
+        For a summer tour of Kazakhstan, Kyrgyzstan and Uzbekistan, contact <a href="https://www.steppestravel.com/">https://www.steppestravel.com/</a> and ask for tours with Chris Aslan.
+        </Typography>
+        <Typography variant="body1" paragraph>
+        For an epic June trip along the Pamir and Karakorum Highway, across the mountains of Tajikistan, Kyrgyzstan, China and Pakistan, contact: <a href="https://www.mideasttrvl.com/">https://www.mideasttrvl.com/</a> and ask for tours with Chris Aslan.
         </Typography>
         <Gallery images={images} />  {/* Gallery component to display images */}
       </Paper>
