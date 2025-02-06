@@ -75,13 +75,13 @@ const Tours: React.FC = () => {
         For tours of Uzbekistan and Tajikistan in 2026, (spring and autumn) contact:
         </Typography>
         <Typography variant="body1" paragraph>
-        <a href="https://www.aceculturaltours.co.uk/">https://www.aceculturaltours.co.uk/</a> and <a href="https://www.indusexperiences.co.uk/">https://www.indusexperiences.co.uk/</a> and ask for information about tours with Chris Aslan
+        <a href="https://www.aceculturaltours.co.uk">https://www.aceculturaltours.co.uk</a> and <a href="https://www.indusexperiences.co.uk">https://www.indusexperiences.co.uk</a> and ask for information about tours with Chris Aslan
         </Typography>
         <Typography variant="body1" paragraph>
-        For a summer tour of Kazakhstan, Kyrgyzstan and Uzbekistan, contact <a href="https://www.steppestravel.com/">https://www.steppestravel.com/</a> and ask for tours with Chris Aslan.
+        For a summer tour of Kazakhstan, Kyrgyzstan and Uzbekistan, contact <a href="https://www.steppestravel.com">https://www.steppestravel.com</a> and ask for tours with Chris Aslan.
         </Typography>
         <Typography variant="body1" paragraph>
-        For an epic June trip along the Pamir and Karakorum Highway, across the mountains of Tajikistan, Kyrgyzstan, China and Pakistan, contact: <a href="https://www.mideasttrvl.com/">https://www.mideasttrvl.com/</a> and ask for tours with Chris Aslan.
+        For an epic June trip along the Pamir and Karakorum Highway, across the mountains of Tajikistan, Kyrgyzstan, China and Pakistan, contact: <a href="https://www.mideasttrvl.com">https://www.mideasttrvl.com</a> and ask for tours with Chris Aslan.
         </Typography>
         <Gallery images={images} />  {/* Gallery component to display images */}
       </Paper>
