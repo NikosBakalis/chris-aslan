@@ -84,7 +84,10 @@ const Tours: React.FC = () => {
         Contact <a href="https://www.steppestravel.com">https://www.steppestravel.com</a> and ask for tours with Chris Aslan.
         </Typography>
         <Typography variant="body1" paragraph>
-        For an epic June trip along the Pamir and Karakorum Highway, across the mountains of Tajikistan, Kyrgyzstan, China and Pakistan, contact: <a href="https://www.mideasttrvl.com">https://www.mideasttrvl.com</a> and ask for tours with Chris Aslan.
+        <strong>For an epic June trip along the Pamir and Karakorum Highway, across the mountains of Tajikistan, Kyrgyzstan, China and Pakistan, contact:</strong> 
+        </Typography>
+        <Typography variant="body1" paragraph>
+        <a href="https://www.mideasttrvl.com">https://www.mideasttrvl.com</a> and ask for tours with Chris Aslan.
         </Typography>
         <Typography variant="body1" paragraph>
         <strong>June 2026: Clash of Empires – the Pamir and Karakorum Highways</strong>
