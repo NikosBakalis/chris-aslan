@@ -69,7 +69,7 @@ const Tours: React.FC = () => {
         Why not join Chris Aslan on a Silk Road adventure? Chris leads two-week tours to Uzbekistan and also multi-country tours of Central Asia or the Caucasus, and has decades of experience within the region. Whether booking Chris for a private tour, or joining one of his small group tours, travelling with him is never just a matter of sight-seeing. Expect an immersive experience; eating in local homes/yurts, picking cotton, feeding silkworms, haggling in bazaars, and visiting hammams or banyas for a good steam and a soak. Chris also includes informal talks as part of every tour to help you scratch beneath the surface and discover more about the places you’re visiting. Accommodation is either luxury or boutique and small groups are a maximum of 15 people.
         </Typography>
         <Typography variant="body1" paragraph>
-        All tours for 2025 are full booked, except a few places on Lands of Fire and Wine. This tour begins in Baku, Azerbaijan and works through Azerbaijan and a large chunk of Georgia, taking in breath-taking scenery and churches, wine-tasting and hot-springs, before finishing in North East Turkey in the tea plantations and the jaw-dropping Sumela Monastery. More details here: <a href="https://www.indusexperiences.co.uk/tours/land-of-fire-and-wine-2025">https://www.indusexperiences.co.uk/tours/land-of-fire-and-wine-2025</a>
+        <strong>All tours for 2025 are full booked, except a few places on Lands of Fire and Wine.</strong> This tour begins in Baku, Azerbaijan and works through Azerbaijan and a large chunk of Georgia, taking in breath-taking scenery and churches, wine-tasting and hot-springs, before finishing in North East Turkey in the tea plantations and the jaw-dropping Sumela Monastery. More details here: <a href="https://www.indusexperiences.co.uk/tours/land-of-fire-and-wine-2025">https://www.indusexperiences.co.uk/tours/land-of-fire-and-wine-2025</a>
         </Typography>
         <Typography variant="body1" paragraph>
         For tours of Uzbekistan and Tajikistan in 2026, (spring and autumn) contact:
@@ -78,10 +78,16 @@ const Tours: React.FC = () => {
         <a href="https://www.aceculturaltours.co.uk">https://www.aceculturaltours.co.uk</a> and <a href="https://www.indusexperiences.co.uk">https://www.indusexperiences.co.uk</a> and ask for information about tours with Chris Aslan
         </Typography>
         <Typography variant="body1" paragraph>
-        For a summer tour of Kazakhstan, Kyrgyzstan and Uzbekistan, contact <a href="https://www.steppestravel.com">https://www.steppestravel.com</a> and ask for tours with Chris Aslan.
+        <strong>For a summer tour of Kazakhstan, Kyrgyzstan and Uzbekistan, contact <a href="https://www.steppestravel.com">https://www.steppestravel.com</a> and ask for tours with Chris Aslan.</strong>
         </Typography>
         <Typography variant="body1" paragraph>
         For an epic June trip along the Pamir and Karakorum Highway, across the mountains of Tajikistan, Kyrgyzstan, China and Pakistan, contact: <a href="https://www.mideasttrvl.com">https://www.mideasttrvl.com</a> and ask for tours with Chris Aslan.
+        </Typography>
+        <Typography variant="body1" paragraph>
+        <strong>June 2026: Clash of Empires – the Pamir and Karakorum Highways</strong>
+        </Typography>
+        <Typography variant="body1" paragraph>
+         I’m doing an exclusive trip with Spiekermann Travel Services that will not be a holiday, but it will be a trip of a lifetime and truly unforgettable. We start in Dushanbe, Tajikistan, and work our way up into the high Pamirs, passing Afghan villages, a mere stone’s throw away. We then head into Kyrgyzstan and then Kashgar in China for a few days to relax and explore this Uighur city before heading along the Karakorum Highway over the highest paved mountain border crossing in the world into Pakistan. The Hunza Valley is probably the most beautiful place I’ve ever been, and I can’t wait to return as well as explore the other beautiful mountains and valleys of Northern Pakistan, finishing the trip in Islamabad. For more details follow the link and ask for details of the Clash of Empires tour. <a href="https://www.mideasttrvl.com/">https://www.mideasttrvl.com/</a>
         </Typography>
         <Gallery images={images} />  {/* Gallery component to display images */}
       </Paper>
