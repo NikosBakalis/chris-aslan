@@ -72,13 +72,16 @@ const Tours: React.FC = () => {
         <strong>All tours for 2025 are full booked, except a few places on Lands of Fire and Wine.</strong> This tour begins in Baku, Azerbaijan and works through Azerbaijan and a large chunk of Georgia, taking in breath-taking scenery and churches, wine-tasting and hot-springs, before finishing in North East Turkey in the tea plantations and the jaw-dropping Sumela Monastery. More details here: <a href="https://www.indusexperiences.co.uk/tours/land-of-fire-and-wine-2025">https://www.indusexperiences.co.uk/tours/land-of-fire-and-wine-2025</a>
         </Typography>
         <Typography variant="body1" paragraph>
-        For tours of Uzbekistan and Tajikistan in 2026, (spring and autumn) contact:
+        <strong>For tours of Uzbekistan and Tajikistan in 2026, (spring and autumn) contact:</strong>
         </Typography>
         <Typography variant="body1" paragraph>
         <a href="https://www.aceculturaltours.co.uk">https://www.aceculturaltours.co.uk</a> and <a href="https://www.indusexperiences.co.uk">https://www.indusexperiences.co.uk</a> and ask for information about tours with Chris Aslan
         </Typography>
         <Typography variant="body1" paragraph>
-        <strong>For a summer tour of Kazakhstan, Kyrgyzstan and Uzbekistan, contact <a href="https://www.steppestravel.com">https://www.steppestravel.com</a> and ask for tours with Chris Aslan.</strong>
+        <strong>For a summer tour of Kazakhstan, Kyrgyzstan and Uzbekistan:</strong>
+        </Typography>
+        <Typography variant="body1" paragraph>
+        Contact <a href="https://www.steppestravel.com">https://www.steppestravel.com</a> and ask for tours with Chris Aslan.
         </Typography>
         <Typography variant="body1" paragraph>
         For an epic June trip along the Pamir and Karakorum Highway, across the mountains of Tajikistan, Kyrgyzstan, China and Pakistan, contact: <a href="https://www.mideasttrvl.com">https://www.mideasttrvl.com</a> and ask for tours with Chris Aslan.
