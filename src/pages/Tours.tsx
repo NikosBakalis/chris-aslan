@@ -89,6 +89,12 @@ const Tours: React.FC = () => {
         <Typography variant="body1" paragraph>
          I’m doing an exclusive trip with Spiekermann Travel Services that will not be a holiday, but it will be a trip of a lifetime and truly unforgettable. We start in Dushanbe, Tajikistan, and work our way up into the high Pamirs, passing Afghan villages, a mere stone’s throw away. We then head into Kyrgyzstan and then Kashgar in China for a few days to relax and explore this Uighur city before heading along the Karakorum Highway over the highest paved mountain border crossing in the world into Pakistan. The Hunza Valley is probably the most beautiful place I’ve ever been, and I can’t wait to return as well as explore the other beautiful mountains and valleys of Northern Pakistan, finishing the trip in Islamabad. For more details follow the link and ask for details of the Clash of Empires tour. <a href="https://www.mideasttrvl.com/">https://www.mideasttrvl.com/</a>
         </Typography>
+        <Typography variant="body1" paragraph>
+        <strong>5 -stan tour of Central Asia 2027:</strong>
+        </Typography>
+        <Typography variant="body1" paragraph>
+        In August/September of 2027 I’ll be leading a grand tour of the whole of Central Asia with Academy Travel. It’s a fantastic itinerary that I’m really excited about as it includes a few hidden gems that most other tours don’t do, such as Arslanbob – the world’s largest wild walnut woods, and Moynaq, an ex-fishing port now stranded in the desert due to the drying of the Aral Sea. Details aren’t up on their website yet (<a href="https://www.academytravel.com.au">www.academytravel.com.au</a>) but you can register interest by emailing: <a href="mailto:jamal@academytravel.com.au">jamal@academytravel.com.au</a>
+        </Typography>
         <Gallery images={images} />  {/* Gallery component to display images */}
       </Paper>
     </Container>
