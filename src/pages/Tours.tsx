@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Typography, Paper } from '@mui/material';
+import { Container, Typography, Paper, Link, Box } from '@mui/material';
 import Gallery from '../components/Gallery';  // Importing Gallery component
 import Tour1 from '../assets/images/tours/37_DSC_9986_Khiva_160.jpg';
 import Tour2 from '../assets/images/tours/2015-04-12 14.26.21.jpg';
@@ -69,42 +69,56 @@ const Tours: React.FC = () => {
         Why not join Chris Aslan on a Silk Road adventure? Chris leads two-week tours to Uzbekistan and also multi-country tours of Asia and the Caucasus, and has decades of experience within the region. Whether booking Chris for a private tour, or joining one of his small group tours, travelling with him is never just a matter of sight-seeing. Expect an immersive experience; eating in local homes/yurts, picking cotton, feeding silkworms, haggling in bazaars, and visiting hammams or banyas for a good steam and a soak. Chris also includes informal talks as part of every tour to help you scratch beneath the surface and discover more about the places you're visiting. Accommodation is either luxury or boutique and small groups are a maximum of 15 people.
         </Typography>
         <Typography variant="h3" gutterBottom style={{ marginTop: '30px' }}>Upcoming Tours 2025</Typography>
-        <Typography variant="h4" gutterBottom style={{ marginTop: '20px' }}>April</Typography>
-        <Typography variant="body1" paragraph>
-        Uzbekistan and Tajikistan with ACE cultural tours: <a href="https://www.aceculturaltours.co.uk/tours/uzbekistan-and-tajikistan-traversing-the-silk-road-uzt1-26">https://www.aceculturaltours.co.uk/tours/uzbekistan-and-tajikistan-traversing-the-silk-road-uzt1-26</a>
+        <Typography variant="h4" gutterBottom style={{ marginTop: '20px', marginBottom: '8px' }}>April</Typography>
+        <Typography variant="body1" paragraph style={{ marginBottom: '16px' }}>
+        <Link href="https://www.aceculturaltours.co.uk/tours/uzbekistan-and-tajikistan-traversing-the-silk-road-uzt1-26" target="_blank" rel="noopener noreferrer" underline="hover" color="primary">
+          Uzbekistan and Tajikistan with ACE cultural tours
+        </Link>
         </Typography>
-        <Typography variant="h4" gutterBottom style={{ marginTop: '20px' }}>May</Typography>
-        <Typography variant="body1" paragraph>
-        Uzbekistan with Indus Experiences with Speikerman: <a href="https://www.indusexperiences.co.uk/tours/glories-of-uzbekistan-2026/">https://www.indusexperiences.co.uk/tours/glories-of-uzbekistan-2026/</a>
+        <Typography variant="h4" gutterBottom style={{ marginTop: '20px', marginBottom: '8px' }}>May</Typography>
+        <Typography variant="body1" paragraph style={{ marginBottom: '16px' }}>
+        <Link href="https://www.indusexperiences.co.uk/tours/glories-of-uzbekistan-2026/" target="_blank" rel="noopener noreferrer" underline="hover" color="primary">
+          Uzbekistan with Indus Experiences with Speikerman
+        </Link>
         </Typography>
-        <Typography variant="h4" gutterBottom style={{ marginTop: '20px' }}>June</Typography>
-        <Typography variant="body1" paragraph>
-        Clash of Empires tour of Tajikistan, Kyrgyzstan, China and Pakistan, along the Pamir and Karakorum Highways with Spiekermann Travel: <a href="https://spiekermanntravel.com/clash-of-empires-jun26">https://spiekermanntravel.com/clash-of-empires-jun26</a>
+        <Typography variant="h4" gutterBottom style={{ marginTop: '20px', marginBottom: '8px' }}>June</Typography>
+        <Typography variant="body1" paragraph style={{ marginBottom: '16px' }}>
+        <Link href="https://spiekermanntravel.com/clash-of-empires-jun26" target="_blank" rel="noopener noreferrer" underline="hover" color="primary">
+          Clash of Empires tour of Tajikistan, Kyrgyzstan, China and Pakistan, along the Pamir and Karakorum Highways with Spiekermann Travel
+        </Link>
         </Typography>
-        <Typography variant="h4" gutterBottom style={{ marginTop: '20px' }}>August/September</Typography>
-        <Typography variant="body1" paragraph>
-        Tour of Kazakhstan, Kyrgyzstan and Uzbekistan (sold out) with Steppes Travel: <a href="https://www.steppestravel.com/group-tours/central-asia-group-tour-three-stans-with-chris-aslan/">https://www.steppestravel.com/group-tours/central-asia-group-tour-three-stans-with-chris-aslan/</a>
+        <Typography variant="h4" gutterBottom style={{ marginTop: '20px', marginBottom: '8px' }}>August/September</Typography>
+        <Typography variant="body1" paragraph style={{ marginBottom: '16px' }}>
+        <Link href="https://www.steppestravel.com/group-tours/central-asia-group-tour-three-stans-with-chris-aslan/" target="_blank" rel="noopener noreferrer" underline="hover" color="primary">
+          Tour of Kazakhstan, Kyrgyzstan and Uzbekistan (sold out) with Steppes Travel
+        </Link>
         </Typography>
-        <Typography variant="h4" gutterBottom style={{ marginTop: '20px' }}>September</Typography>
-        <Typography variant="body1" paragraph>
-        Tour of Uzbekistan and Tajikistan with ACE cultural tours: <a href="https://www.aceculturaltours.co.uk/tours/uzbekistan-and-tajikistan-traversing-the-silk-road-uzt2-26">https://www.aceculturaltours.co.uk/tours/uzbekistan-and-tajikistan-traversing-the-silk-road-uzt2-26</a>
+        <Typography variant="h4" gutterBottom style={{ marginTop: '20px', marginBottom: '8px' }}>September</Typography>
+        <Typography variant="body1" paragraph style={{ marginBottom: '16px' }}>
+        <Link href="https://www.aceculturaltours.co.uk/tours/uzbekistan-and-tajikistan-traversing-the-silk-road-uzt2-26" target="_blank" rel="noopener noreferrer" underline="hover" color="primary">
+          Tour of Uzbekistan and Tajikistan with ACE cultural tours
+        </Link>
         </Typography>
         <Typography variant="h3" gutterBottom style={{ marginTop: '30px' }}>Upcoming Tours 2027</Typography>
-        <Typography variant="h4" gutterBottom style={{ marginTop: '20px' }}>April</Typography>
-        <Typography variant="body1" paragraph>
-        Turkmenistan, Uzbekistan and Tajikistan with Steppes Travel: Contact Jim Davies for enquiries: <a href="mailto:jim@steppestravel.com">jim@steppestravel.com</a>
+        <Typography variant="h4" gutterBottom style={{ marginTop: '20px', marginBottom: '8px' }}>April</Typography>
+        <Typography variant="body1" paragraph style={{ marginBottom: '16px' }}>
+        Turkmenistan, Uzbekistan and Tajikistan with Steppes Travel: Contact Jim Davies for enquiries: <Link href="mailto:jim@steppestravel.com" underline="hover" color="primary">jim@steppestravel.com</Link>
         </Typography>
-        <Typography variant="h4" gutterBottom style={{ marginTop: '20px' }}>May</Typography>
-        <Typography variant="body1" paragraph>
-        Uzbekistan and Kyrgyzstan with ACE cultural tours. Contact Megan Lewis for enquiries: <a href="mailto:megan@aceculturaltours.co.uk">megan@aceculturaltours.co.uk</a>
+        <Typography variant="h4" gutterBottom style={{ marginTop: '20px', marginBottom: '8px' }}>May</Typography>
+        <Typography variant="body1" paragraph style={{ marginBottom: '16px' }}>
+        Uzbekistan and Kyrgyzstan with ACE cultural tours. Contact Megan Lewis for enquiries: <Link href="mailto:megan@aceculturaltours.co.uk" underline="hover" color="primary">megan@aceculturaltours.co.uk</Link>
         </Typography>
-        <Typography variant="h4" gutterBottom style={{ marginTop: '20px' }}>August/September</Typography>
-        <Typography variant="body1" paragraph>
-        5 -stan tour of Central Asia with Academy travel: <a href="https://academytravel.com.au/eoi-the-five-stans-tour-august-2027">https://academytravel.com.au/eoi-the-five-stans-tour-august-2027</a>
+        <Typography variant="h4" gutterBottom style={{ marginTop: '20px', marginBottom: '8px' }}>August/September</Typography>
+        <Typography variant="body1" paragraph style={{ marginBottom: '16px' }}>
+        <Link href="https://academytravel.com.au/eoi-the-five-stans-tour-august-2027" target="_blank" rel="noopener noreferrer" underline="hover" color="primary">
+          5-stan tour of Central Asia with Academy travel
+        </Link>
         </Typography>
-        <Typography variant="h4" gutterBottom style={{ marginTop: '20px' }}>September/October</Typography>
-        <Typography variant="body1" paragraph>
-        Uzbekistan, Kyrgyzstan, China, Pakistan and India, with Aahilya Holidays: <a href="https://www.aahilyaholidays.com/tour/aa5e/footprints-of-mughal---a-journey-through-the-silk-route-with-chris-aslan-2027">https://www.aahilyaholidays.com/tour/aa5e/footprints-of-mughal---a-journey-through-the-silk-route-with-chris-aslan-2027</a>
+        <Typography variant="h4" gutterBottom style={{ marginTop: '20px', marginBottom: '8px' }}>September/October</Typography>
+        <Typography variant="body1" paragraph style={{ marginBottom: '16px' }}>
+        <Link href="https://www.aahilyaholidays.com/tour/aa5e/footprints-of-mughal---a-journey-through-the-silk-route-with-chris-aslan-2027" target="_blank" rel="noopener noreferrer" underline="hover" color="primary">
+          Uzbekistan, Kyrgyzstan, China, Pakistan and India, with Aahilya Holidays
+        </Link>
         </Typography>
         <Gallery images={images} />  {/* Gallery component to display images */}
       </Paper>
