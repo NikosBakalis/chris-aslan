@@ -66,34 +66,45 @@ const Tours: React.FC = () => {
       <Paper elevation={3} style={{ padding: '20px', margin: '20px 0' }}>
         <Typography variant="h1" gutterBottom>Tours</Typography>
         <Typography variant="body1" paragraph>
-        Why not join Chris Aslan on a Silk Road adventure? Chris leads two-week tours to Uzbekistan and also multi-country tours of Central Asia or the Caucasus, and has decades of experience within the region. Whether booking Chris for a private tour, or joining one of his small group tours, travelling with him is never just a matter of sight-seeing. Expect an immersive experience; eating in local homes/yurts, picking cotton, feeding silkworms, haggling in bazaars, and visiting hammams or banyas for a good steam and a soak. Chris also includes informal talks as part of every tour to help you scratch beneath the surface and discover more about the places you’re visiting. Accommodation is either luxury or boutique and small groups are a maximum of 15 people.
+        Why not join Chris Aslan on a Silk Road adventure? Chris leads two-week tours to Uzbekistan and also multi-country tours of Asia and the Caucasus, and has decades of experience within the region. Whether booking Chris for a private tour, or joining one of his small group tours, travelling with him is never just a matter of sight-seeing. Expect an immersive experience; eating in local homes/yurts, picking cotton, feeding silkworms, haggling in bazaars, and visiting hammams or banyas for a good steam and a soak. Chris also includes informal talks as part of every tour to help you scratch beneath the surface and discover more about the places you're visiting. Accommodation is either luxury or boutique and small groups are a maximum of 15 people.
         </Typography>
+        <Typography variant="h2" gutterBottom style={{ marginTop: '30px' }}>Upcoming Tours 2025</Typography>
+        <Typography variant="h3" gutterBottom style={{ marginTop: '20px' }}>April</Typography>
         <Typography variant="body1" paragraph>
-        <strong>All tours for 2025 are full booked, except a few places on Lands of Fire and Wine.</strong> This tour begins in Baku, Azerbaijan and works through Azerbaijan and a large chunk of Georgia, taking in breath-taking scenery and churches, wine-tasting and hot-springs, before finishing in North East Turkey in the tea plantations and the jaw-dropping Sumela Monastery. More details here: <a href="https://www.indusexperiences.co.uk/tours/land-of-fire-and-wine-2025">https://www.indusexperiences.co.uk/tours/land-of-fire-and-wine-2025</a>
+        Uzbekistan and Tajikistan with ACE cultural tours: <a href="https://www.aceculturaltours.co.uk/tours/uzbekistan-and-tajikistan-traversing-the-silk-road-uzt1-26">https://www.aceculturaltours.co.uk/tours/uzbekistan-and-tajikistan-traversing-the-silk-road-uzt1-26</a>
         </Typography>
+        <Typography variant="h3" gutterBottom style={{ marginTop: '20px' }}>May</Typography>
         <Typography variant="body1" paragraph>
-        <strong>For tours of Uzbekistan and Tajikistan in 2026, (spring and autumn):</strong>
+        Uzbekistan with Indus Experiences with Speikerman: <a href="https://www.indusexperiences.co.uk/tours/glories-of-uzbekistan-2026/">https://www.indusexperiences.co.uk/tours/glories-of-uzbekistan-2026/</a>
         </Typography>
+        <Typography variant="h3" gutterBottom style={{ marginTop: '20px' }}>June</Typography>
         <Typography variant="body1" paragraph>
-        Contact <a href="https://www.aceculturaltours.co.uk">https://www.aceculturaltours.co.uk</a> and <a href="https://www.indusexperiences.co.uk">https://www.indusexperiences.co.uk</a> and ask for information about tours with Chris Aslan
+        Clash of Empires tour of Tajikistan, Kyrgyzstan, China and Pakistan, along the Pamir and Karakorum Highways with Spiekermann Travel: <a href="https://spiekermanntravel.com/clash-of-empires-jun26">https://spiekermanntravel.com/clash-of-empires-jun26</a>
         </Typography>
+        <Typography variant="h3" gutterBottom style={{ marginTop: '20px' }}>August/September</Typography>
         <Typography variant="body1" paragraph>
-        <strong>For a summer tour of Kazakhstan, Kyrgyzstan and Uzbekistan:</strong>
+        Tour of Kazakhstan, Kyrgyzstan and Uzbekistan (sold out) with Steppes Travel: <a href="https://www.steppestravel.com/group-tours/central-asia-group-tour-three-stans-with-chris-aslan/">https://www.steppestravel.com/group-tours/central-asia-group-tour-three-stans-with-chris-aslan/</a>
         </Typography>
+        <Typography variant="h3" gutterBottom style={{ marginTop: '20px' }}>September</Typography>
         <Typography variant="body1" paragraph>
-        Contact <a href="https://www.steppestravel.com">https://www.steppestravel.com</a> and ask for tours with Chris Aslan.
+        Tour of Uzbekistan and Tajikistan with ACE cultural tours: <a href="https://www.aceculturaltours.co.uk/tours/uzbekistan-and-tajikistan-traversing-the-silk-road-uzt2-26">https://www.aceculturaltours.co.uk/tours/uzbekistan-and-tajikistan-traversing-the-silk-road-uzt2-26</a>
         </Typography>
+        <Typography variant="h2" gutterBottom style={{ marginTop: '30px' }}>Upcoming Tours 2027</Typography>
+        <Typography variant="h3" gutterBottom style={{ marginTop: '20px' }}>April</Typography>
         <Typography variant="body1" paragraph>
-        <strong>June 2026: Clash of Empires – the Pamir and Karakorum Highways</strong>
+        Turkmenistan, Uzbekistan and Tajikistan with Steppes Travel: Contact Jim Davies for enquiries: <a href="mailto:jim@steppestravel.com">jim@steppestravel.com</a>
         </Typography>
+        <Typography variant="h3" gutterBottom style={{ marginTop: '20px' }}>May</Typography>
         <Typography variant="body1" paragraph>
-         I’m doing an exclusive trip with Spiekermann Travel Services that will not be a holiday, but it will be a trip of a lifetime and truly unforgettable. We start in Dushanbe, Tajikistan, and work our way up into the high Pamirs, passing Afghan villages, a mere stone’s throw away. We then head into Kyrgyzstan and then Kashgar in China for a few days to relax and explore this Uighur city before heading along the Karakorum Highway over the highest paved mountain border crossing in the world into Pakistan. The Hunza Valley is probably the most beautiful place I’ve ever been, and I can’t wait to return as well as explore the other beautiful mountains and valleys of Northern Pakistan, finishing the trip in Islamabad. For more details follow the link and ask for details of the Clash of Empires tour. <a href="https://www.mideasttrvl.com/">https://www.mideasttrvl.com/</a>
+        Uzbekistan and Kyrgyzstan with ACE cultural tours. Contact Megan Lewis for enquiries: <a href="mailto:megan@aceculturaltours.co.uk">megan@aceculturaltours.co.uk</a>
         </Typography>
+        <Typography variant="h3" gutterBottom style={{ marginTop: '20px' }}>August/September</Typography>
         <Typography variant="body1" paragraph>
-        <strong>5 -stan tour of Central Asia 2027:</strong>
+        5 -stan tour of Central Asia with Academy travel: <a href="https://academytravel.com.au/eoi-the-five-stans-tour-august-2027">https://academytravel.com.au/eoi-the-five-stans-tour-august-2027</a>
         </Typography>
+        <Typography variant="h3" gutterBottom style={{ marginTop: '20px' }}>September/October</Typography>
         <Typography variant="body1" paragraph>
-        In August/September of 2027 I’ll be leading a grand tour of the whole of Central Asia with Academy Travel. It’s a fantastic itinerary that I’m really excited about as it includes a few hidden gems that most other tours don’t do, such as Arslanbob – the world’s largest wild walnut woods, and Moynaq, an ex-fishing port now stranded in the desert due to the drying of the Aral Sea. Details aren’t up on their website yet (<a href="https://www.academytravel.com.au">www.academytravel.com.au</a>) but you can register interest by emailing: <a href="mailto:jamal@academytravel.com.au">jamal@academytravel.com.au</a>
+        Uzbekistan, Kyrgyzstan, China, Pakistan and India, with Aahilya Holidays: <a href="https://www.aahilyaholidays.com/tour/aa5e/footprints-of-mughal---a-journey-through-the-silk-route-with-chris-aslan-2027">https://www.aahilyaholidays.com/tour/aa5e/footprints-of-mughal---a-journey-through-the-silk-route-with-chris-aslan-2027</a>
         </Typography>
         <Gallery images={images} />  {/* Gallery component to display images */}
       </Paper>
