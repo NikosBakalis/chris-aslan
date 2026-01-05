@@ -33,7 +33,7 @@ const Gallery: React.FC<GalleryProps> = ({ images, link }) => {
   }
 
   return (
-    <Box className="gallery" sx={{ width: 'auto', height: '46vh', overflow: 'hidden' }}>
+    <Box className="gallery" sx={{ width: 'auto', overflow: 'hidden', py: 2 }}>
       <Slider {...settings}>
         {images.map((image, index) => (
           <Box
@@ -43,26 +43,43 @@ const Gallery: React.FC<GalleryProps> = ({ images, link }) => {
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
-              height: '40vh',
+              height: { xs: '300px', sm: '400px', md: '500px' },
               overflow: 'hidden',
-              marginBottom: '2vh'
+              px: 2,
             }}
           >
             <Box
               component="img"
               src={image}
               alt={`Slide ${index + 1}`}
-              sx={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
+              sx={{ 
+                maxWidth: '100%', 
+                maxHeight: '100%', 
+                objectFit: 'contain',
+                borderRadius: 1,
+              }}
             />
           </Box>
         ))}
       </Slider>
       {link && (
-        <Typography variant="h6" sx={{ margin: 2 }}>
-          <Link href={link} color="inherit" target="_blank" rel="noopener noreferrer">
+        <Box sx={{ textAlign: 'center', mt: 3, mb: 2 }}>
+          <Link 
+            href={link} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            sx={{
+              color: 'primary.main',
+              textDecoration: 'none',
+              fontWeight: 500,
+              '&:hover': {
+                textDecoration: 'underline',
+              },
+            }}
+          >
             More Information
           </Link>
-        </Typography>
+        </Box>
       )}
     </Box>
   );

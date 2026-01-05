@@ -9,18 +9,46 @@ interface BookCardProps {
 
 const BookCard: React.FC<BookCardProps> = ({ image, title }) => {
   return (
-    <Card>
-      <CardActionArea>
+    <Card
+      sx={{
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        transition: 'transform 0.3s, box-shadow 0.3s',
+        '&:hover': {
+          transform: 'translateY(-8px)',
+          boxShadow: '0 8px 24px rgba(0,0,0,0.2)',
+        },
+        borderRadius: 2,
+        overflow: 'hidden',
+      }}
+    >
+      <CardActionArea sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', alignItems: 'stretch' }}>
         <CardMedia
           component="img"
           alt={title}
-          height="140"
           image={image}
           title={title}
-          sx={{ height: '550px' }}
+          sx={{ 
+            height: { xs: '400px', sm: '500px', md: '550px' },
+            objectFit: 'cover',
+            transition: 'transform 0.3s',
+            '&:hover': {
+              transform: 'scale(1.05)',
+            },
+          }}
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+        <CardContent sx={{ flexGrow: 0 }}>
+          <Typography 
+            gutterBottom 
+            variant="h5" 
+            component="div"
+            sx={{
+              fontWeight: 600,
+              color: 'text.primary',
+              textAlign: 'center',
+            }}
+          >
             {title}
           </Typography>
         </CardContent>

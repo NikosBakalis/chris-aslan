@@ -13,14 +13,17 @@ interface VideoGalleryProps {
 
 const VideoGallery: React.FC<VideoGalleryProps> = ({ videoUrl, galleries }) => {
   return (
-    <Box className="video-gallery" sx={{ marginBottom: 4, overflowX: 'hidden' }}>
-      <Box sx={{ display: 'flex', justifyContent: 'center', paddingTop: 4 }}>
+    <Box className="video-gallery" sx={{ p: 3, overflowX: 'hidden' }}>
+      <Box sx={{ display: 'flex', justifyContent: 'center', mb: 4 }}>
         <Box
           sx={{
             width: '100%',
             maxWidth: '900px',
-            height: '500px',
+            height: { xs: '300px', sm: '400px', md: '500px' },
             position: 'relative',
+            borderRadius: 2,
+            overflow: 'hidden',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
           }}
         >
           <ReactPlayer
@@ -34,8 +37,27 @@ const VideoGallery: React.FC<VideoGalleryProps> = ({ videoUrl, galleries }) => {
         </Box>
       </Box>
       {galleries.map((gallery, index) => (
-        <Box key={index} className="gallery-section" sx={{ marginTop: 4, marginLeft: 2 }}>
-          <Typography variant="h4" gutterBottom sx={{textDecoration: 'underline'}}>
+        <Box 
+          key={index} 
+          className="gallery-section" 
+          sx={{ 
+            mt: 4,
+            mb: 4,
+            px: { xs: 1, sm: 2 },
+          }}
+        >
+          <Typography 
+            variant="h4" 
+            gutterBottom 
+            sx={{
+              mb: 3,
+              fontWeight: 600,
+              color: 'primary.main',
+              pb: 2,
+              borderBottom: '2px solid',
+              borderColor: 'divider',
+            }}
+          >
             {gallery.heading}
           </Typography>
           <Gallery images={gallery.images || []} />

@@ -36,27 +36,87 @@ const lecturesData = [
 
 const Lectures: React.FC = () => {
   return (
-    <Container>
-      <Paper elevation={3} style={{ padding: '20px', margin: '20px 0' }}>
-        <Typography variant="h1" gutterBottom>Lectures</Typography>
-        <Typography variant="body1" paragraph>
+    <Container maxWidth="lg">
+      <Paper 
+        elevation={3} 
+        sx={{ 
+          padding: { xs: 3, md: 4 }, 
+          margin: '20px 0',
+          borderRadius: 2,
+        }}
+      >
+        <Typography 
+          variant="h2" 
+          gutterBottom
+          sx={{ 
+            mb: 2, 
+            fontWeight: 700,
+            color: 'primary.main',
+          }}
+        >
+          Lectures
+        </Typography>
+        <Typography 
+          variant="body1" 
+          paragraph
+          sx={{ 
+            mb: 4, 
+            lineHeight: 1.8,
+            color: 'text.secondary',
+          }}
+        >
           Chris lectures both online and in-person. Most of his lectures are done through the Art society...
         </Typography>
-        <Grid container spacing={4}>
+        <Grid container spacing={3}>
           {lecturesData.map((lecture, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
-              <Card>
+              <Card
+                sx={{
+                  height: '100%',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  transition: 'transform 0.3s, box-shadow 0.3s',
+                  '&:hover': {
+                    transform: 'translateY(-8px)',
+                    boxShadow: '0 8px 24px rgba(0,0,0,0.2)',
+                  },
+                  borderRadius: 2,
+                  overflow: 'hidden',
+                }}
+              >
                 <CardMedia
                   component="img"
                   alt={lecture.title}
-                  height="400vh"
                   image={lecture.image}
+                  sx={{
+                    height: { xs: 250, sm: 300, md: 350 },
+                    objectFit: 'cover',
+                    transition: 'transform 0.3s',
+                    '&:hover': {
+                      transform: 'scale(1.05)',
+                    },
+                  }}
                 />
-                <CardContent>
-                  <Typography variant="h5" gutterBottom>
+                <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
+                  <Typography 
+                    variant="h5" 
+                    gutterBottom
+                    sx={{
+                      fontWeight: 600,
+                      color: 'text.primary',
+                      mb: 2,
+                    }}
+                  >
                     {lecture.title}
                   </Typography>
-                  <Typography variant="body2">
+                  <Typography 
+                    variant="body2"
+                    sx={{
+                      color: 'text.secondary',
+                      lineHeight: 1.7,
+                      flexGrow: 1,
+                    }}
+                  >
                     {lecture.description}
                   </Typography>
                 </CardContent>

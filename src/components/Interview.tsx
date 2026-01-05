@@ -12,16 +12,52 @@ interface InterviewProps {
 
 const Interview: React.FC<InterviewProps> = ({ title, interviewQuestion, interviewAnswer }) => {
   return (
-    <Box sx={{ m: 2 }}>
-      <Typography variant="h4" gutterBottom sx={{textDecoration: 'underline'}}>
+    <Box sx={{ p: 3 }}>
+      <Typography 
+        variant="h4" 
+        gutterBottom 
+        sx={{
+          mb: 4,
+          fontWeight: 600,
+          color: 'primary.main',
+          pb: 2,
+          borderBottom: '2px solid',
+          borderColor: 'divider',
+        }}
+      >
         Interview for {title}
       </Typography>
-      <Grid container spacing={2}>
+      <Grid container spacing={3}>
         {interviewQuestion.map((question, index) => (
           <Grid item xs={12} key={index}>
-            <Box>
-              <Typography variant='subtitle1' fontWeight='700'>{question}</Typography>
-              <Typography variant="body1">{interviewAnswer[index]}</Typography>
+            <Box
+              sx={{
+                mb: 3,
+                p: 2,
+                backgroundColor: 'background.default',
+                borderRadius: 2,
+              }}
+            >
+              <Typography 
+                variant='h6' 
+                fontWeight='600'
+                sx={{
+                  mb: 2,
+                  color: 'text.primary',
+                }}
+              >
+                {question}
+              </Typography>
+              <Typography 
+                variant="body1"
+                sx={{
+                  color: 'text.secondary',
+                  lineHeight: 1.8,
+                  whiteSpace: 'pre-line',
+                }}
+              >
+                {interviewAnswer[index]}
+              </Typography>
             </Box>
           </Grid>
         ))}

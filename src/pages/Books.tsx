@@ -343,10 +343,27 @@ const Books: React.FC = () => {
   };
 
   return (
-    <Container>
-      <Paper elevation={3} style={{ padding: '20px', margin: '20px 0' }}>
-        <Typography variant="h1">Books</Typography>
-        <Grid container spacing={2}>
+    <Container maxWidth="lg">
+      <Paper 
+        elevation={3} 
+        sx={{ 
+          padding: { xs: 3, md: 4 }, 
+          margin: '20px 0',
+          borderRadius: 2,
+        }}
+      >
+        <Typography 
+          variant="h2" 
+          gutterBottom
+          sx={{ 
+            mb: 4, 
+            fontWeight: 700,
+            color: 'primary.main',
+          }}
+        >
+          Books
+        </Typography>
+        <Grid container spacing={3}>
           {booksData.map((book, index) => (
             <Grid item xs={12} sm={6} md={4} key={index} onClick={() => handleOpen(book)}>
               <BookCard {...book} />
@@ -354,17 +371,46 @@ const Books: React.FC = () => {
           ))}
         </Grid>
         {selectedBook && (
-          <Dialog open={open} onClose={handleClose} fullWidth maxWidth="lg" sx={{ margin: '5px' }}>
-            <Box sx={{ display: 'inline-flex', justifyContent: 'center', alignItems: 'center' }}>
-              <Typography variant="h2">{selectedBook.title}</Typography>
+          <Dialog 
+            open={open} 
+            onClose={handleClose} 
+            fullWidth 
+            maxWidth="lg" 
+            sx={{ 
+              '& .MuiDialog-paper': {
+                borderRadius: 2,
+                maxHeight: '90vh',
+              },
+            }}
+          >
+            <Box 
+              sx={{ 
+                p: 3,
+                borderBottom: '1px solid',
+                borderColor: 'divider',
+                backgroundColor: 'primary.main',
+                color: 'white',
+              }}
+            >
+              <Typography 
+                variant="h3" 
+                sx={{ 
+                  fontWeight: 700,
+                  textAlign: 'center',
+                }}
+              >
+                {selectedBook.title}
+              </Typography>
             </Box>
-            {selectedBook.type === BookType.Gallery ? (
-              <Gallery images={selectedBook.gallery} link='http://www.acarpetridetokhiva.com' />
-            ) : selectedBook.type === BookType.Interview ? (
-              <Interview title={selectedBook.title} interviewQuestion={selectedBook.interviewQuestion} interviewAnswer={selectedBook.interviewAnswer} />
-            ) : (
-              <VideoGallery videoUrl={selectedBook.videoUrl} galleries={selectedBook.galleries} />
-            )}
+            <Box sx={{ maxHeight: 'calc(90vh - 100px)', overflow: 'auto' }}>
+              {selectedBook.type === BookType.Gallery ? (
+                <Gallery images={selectedBook.gallery} link='http://www.acarpetridetokhiva.com' />
+              ) : selectedBook.type === BookType.Interview ? (
+                <Interview title={selectedBook.title} interviewQuestion={selectedBook.interviewQuestion} interviewAnswer={selectedBook.interviewAnswer} />
+              ) : (
+                <VideoGallery videoUrl={selectedBook.videoUrl} galleries={selectedBook.galleries} />
+              )}
+            </Box>
           </Dialog>
         )}
       </Paper>
