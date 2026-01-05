@@ -64,45 +64,45 @@ const Tours: React.FC = () => {
   return (
     <Container>
       <Paper elevation={3} style={{ padding: '20px', margin: '20px 0' }}>
-        <Typography variant="h1" gutterBottom>Tours</Typography>
+        <Typography variant="h2" gutterBottom>Tours</Typography>
         <Typography variant="body1" paragraph>
         Why not join Chris Aslan on a Silk Road adventure? Chris leads two-week tours to Uzbekistan and also multi-country tours of Asia and the Caucasus, and has decades of experience within the region. Whether booking Chris for a private tour, or joining one of his small group tours, travelling with him is never just a matter of sight-seeing. Expect an immersive experience; eating in local homes/yurts, picking cotton, feeding silkworms, haggling in bazaars, and visiting hammams or banyas for a good steam and a soak. Chris also includes informal talks as part of every tour to help you scratch beneath the surface and discover more about the places you're visiting. Accommodation is either luxury or boutique and small groups are a maximum of 15 people.
         </Typography>
-        <Typography variant="h2" gutterBottom style={{ marginTop: '30px' }}>Upcoming Tours 2025</Typography>
-        <Typography variant="h3" gutterBottom style={{ marginTop: '20px' }}>April</Typography>
+        <Typography variant="h3" gutterBottom style={{ marginTop: '30px' }}>Upcoming Tours 2025</Typography>
+        <Typography variant="h4" gutterBottom style={{ marginTop: '20px' }}>April</Typography>
         <Typography variant="body1" paragraph>
         Uzbekistan and Tajikistan with ACE cultural tours: <a href="https://www.aceculturaltours.co.uk/tours/uzbekistan-and-tajikistan-traversing-the-silk-road-uzt1-26">https://www.aceculturaltours.co.uk/tours/uzbekistan-and-tajikistan-traversing-the-silk-road-uzt1-26</a>
         </Typography>
-        <Typography variant="h3" gutterBottom style={{ marginTop: '20px' }}>May</Typography>
+        <Typography variant="h4" gutterBottom style={{ marginTop: '20px' }}>May</Typography>
         <Typography variant="body1" paragraph>
         Uzbekistan with Indus Experiences with Speikerman: <a href="https://www.indusexperiences.co.uk/tours/glories-of-uzbekistan-2026/">https://www.indusexperiences.co.uk/tours/glories-of-uzbekistan-2026/</a>
         </Typography>
-        <Typography variant="h3" gutterBottom style={{ marginTop: '20px' }}>June</Typography>
+        <Typography variant="h4" gutterBottom style={{ marginTop: '20px' }}>June</Typography>
         <Typography variant="body1" paragraph>
         Clash of Empires tour of Tajikistan, Kyrgyzstan, China and Pakistan, along the Pamir and Karakorum Highways with Spiekermann Travel: <a href="https://spiekermanntravel.com/clash-of-empires-jun26">https://spiekermanntravel.com/clash-of-empires-jun26</a>
         </Typography>
-        <Typography variant="h3" gutterBottom style={{ marginTop: '20px' }}>August/September</Typography>
+        <Typography variant="h4" gutterBottom style={{ marginTop: '20px' }}>August/September</Typography>
         <Typography variant="body1" paragraph>
         Tour of Kazakhstan, Kyrgyzstan and Uzbekistan (sold out) with Steppes Travel: <a href="https://www.steppestravel.com/group-tours/central-asia-group-tour-three-stans-with-chris-aslan/">https://www.steppestravel.com/group-tours/central-asia-group-tour-three-stans-with-chris-aslan/</a>
         </Typography>
-        <Typography variant="h3" gutterBottom style={{ marginTop: '20px' }}>September</Typography>
+        <Typography variant="h4" gutterBottom style={{ marginTop: '20px' }}>September</Typography>
         <Typography variant="body1" paragraph>
         Tour of Uzbekistan and Tajikistan with ACE cultural tours: <a href="https://www.aceculturaltours.co.uk/tours/uzbekistan-and-tajikistan-traversing-the-silk-road-uzt2-26">https://www.aceculturaltours.co.uk/tours/uzbekistan-and-tajikistan-traversing-the-silk-road-uzt2-26</a>
         </Typography>
-        <Typography variant="h2" gutterBottom style={{ marginTop: '30px' }}>Upcoming Tours 2027</Typography>
-        <Typography variant="h3" gutterBottom style={{ marginTop: '20px' }}>April</Typography>
+        <Typography variant="h3" gutterBottom style={{ marginTop: '30px' }}>Upcoming Tours 2027</Typography>
+        <Typography variant="h4" gutterBottom style={{ marginTop: '20px' }}>April</Typography>
         <Typography variant="body1" paragraph>
         Turkmenistan, Uzbekistan and Tajikistan with Steppes Travel: Contact Jim Davies for enquiries: <a href="mailto:jim@steppestravel.com">jim@steppestravel.com</a>
         </Typography>
-        <Typography variant="h3" gutterBottom style={{ marginTop: '20px' }}>May</Typography>
+        <Typography variant="h4" gutterBottom style={{ marginTop: '20px' }}>May</Typography>
         <Typography variant="body1" paragraph>
         Uzbekistan and Kyrgyzstan with ACE cultural tours. Contact Megan Lewis for enquiries: <a href="mailto:megan@aceculturaltours.co.uk">megan@aceculturaltours.co.uk</a>
         </Typography>
-        <Typography variant="h3" gutterBottom style={{ marginTop: '20px' }}>August/September</Typography>
+        <Typography variant="h4" gutterBottom style={{ marginTop: '20px' }}>August/September</Typography>
         <Typography variant="body1" paragraph>
         5 -stan tour of Central Asia with Academy travel: <a href="https://academytravel.com.au/eoi-the-five-stans-tour-august-2027">https://academytravel.com.au/eoi-the-five-stans-tour-august-2027</a>
         </Typography>
-        <Typography variant="h3" gutterBottom style={{ marginTop: '20px' }}>September/October</Typography>
+        <Typography variant="h4" gutterBottom style={{ marginTop: '20px' }}>September/October</Typography>
         <Typography variant="body1" paragraph>
         Uzbekistan, Kyrgyzstan, China, Pakistan and India, with Aahilya Holidays: <a href="https://www.aahilyaholidays.com/tour/aa5e/footprints-of-mughal---a-journey-through-the-silk-route-with-chris-aslan-2027">https://www.aahilyaholidays.com/tour/aa5e/footprints-of-mughal---a-journey-through-the-silk-route-with-chris-aslan-2027</a>
         </Typography>
