@@ -74,7 +74,7 @@ const Tours: React.FC = () => {
         <Divider sx={{ my: 4 }} />
         
         <Typography variant="h3" gutterBottom sx={{ mt: 4, mb: 3, fontWeight: 600, color: 'primary.main' }}>
-          Upcoming Tours 2025
+          Upcoming Tours 2026
         </Typography>
         <Box sx={{ mb: 3 }}>
           <Typography variant="h5" gutterBottom sx={{ mb: 1, fontWeight: 600, color: 'text.primary' }}>
