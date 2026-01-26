@@ -150,7 +150,7 @@ const Tours: React.FC = () => {
             May
           </Typography>
           <Typography variant="body1" sx={{ mb: 3 }}>
-            Uzbekistan and Kyrgyzstan with ACE cultural tours. Contact Megan Lewis for enquiries: <Link href="mailto:megan@aceculturaltours.co.uk" underline="hover" color="primary" sx={{ fontSize: '1rem' }}>megan@aceculturaltours.co.uk</Link>
+            Uzbekistan and Kyrgyzstan with ACE cultural tours. Contact Megan Lewis for enquiries: <Link href="mailto:sales@aceculturaltour.co.uk" underline="hover" color="primary" sx={{ fontSize: '1rem' }}>sales@aceculturaltour.co.uk</Link>
           </Typography>
         </Box>
 
